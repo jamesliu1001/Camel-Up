@@ -55,13 +55,12 @@ class CamelUpGame:
                 float: The expected value of the ticket
         '''
         ev = 0
-        ### BEGIN SOLUTION
         ev = ticket_value * prob_first + prob_second + (-1*(1-prob_first-prob_second))
 
         if ev == 0:
             return -1
 
-        ### END SOLUTION
+
         return ev
     
     def get_player_bet(self, player:CamelUpPlayer)->str:
